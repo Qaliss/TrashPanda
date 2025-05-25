@@ -1,0 +1,250 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <world name="room">
+
+        <!--Lighting-->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <!--Ground-->
+        <model name="floor">
+            <static>true</static>
+            <link name="floor_link">
+                <visual name="floor_visual">
+                    <geometry>
+                        <box>
+                            <size>5 5 0.01</size>
+                        </box>
+                    </geometry>
+                </visual>
+                <collision name="floor_collision">
+                    <geometry>
+                        <box>
+                            <size>5 5 0.01</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!--Desk-->
+        <model name="desk">
+            <static>true</static>
+            <pose>1.45 1.95 0.375 0 0 0</pose>
+            <link name="desk_link">
+                <visual name="desk_visual">
+                    <geometry>
+                        <box>
+                            <size>2 1 0.75</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>0.8 0.4 0.1 1</ambient> <!-- brownish -->
+                        <diffuse>0.8 0.4 0.1 1</diffuse> <!-- brownish -->
+                        <specular>0.5 0.5 0.5 1</specular> <!-- light gray reflection -->
+                    </material>
+                </visual>
+                <collision name="desk_collision">
+                    <geometry>
+                        <box>
+                            <size>2 1 0.75</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!--Bed-->
+        <model name="bed">
+            <static>true</static>
+            <pose>0.95 -1.7 0.35 0 0 0</pose>
+            <link name="bed_link">
+                <visual name="bed_visual">
+                    <geometry>
+                        <box>
+                            <size>3 1.5 0.65</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>0 1 0 1</ambient> 
+                        <diffuse>0 1 0 1</diffuse>
+                    </material>
+                </visual>
+                <collision name="bed_collision">
+                    <geometry>
+                        <box>
+                            <size>3 1.5 0.65</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!--Volleyball-->
+        <model name="ball">
+            <static>true</static>
+            <pose>0.2 0.7 0.15 0 0 0</pose>
+            <link name="ball_link">
+                <visual name="ball_visual">
+                    <geometry>
+                        <sphere>
+                            <radius>0.15</radius>
+                        </sphere>
+                    </geometry>
+                </visual>
+                    <material>
+                        <ambient>1 1 1 1</ambient>
+                        <diffuse>1 1 1 1</diffuse>
+                    </material>
+                <collision name="ball_collision">
+                    <geometry>
+                        <sphere>
+                            <radius>0.15</radius>
+                        </sphere>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!--Backpack-->
+        <model name="backpack">
+            <static>true</static>
+            <pose>-2.1 -1 0.2 0 0 0</pose>
+            <link name="backpack_link">
+                <visual name="backpack_visual">
+                    <geometry>
+                        <box>
+                            <size>0.2 0.4 0.5</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>1 0 0 1</ambient> 
+                        <diffuse>1 0 0 1</diffuse>
+                    </material>
+                </visual>
+                <collision name="backpack_collision">
+                    <geometry>
+                        <box>
+                            <size>0.2 0.4 0.6</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>   
+
+        <!--Chair-->
+        <model name="chair">
+            <static>true</static>
+            <pose>2 0 0.4 0 0 0</pose>
+            <link name="chair_link">
+                <visual name="chair_visual">
+                    <geometry>
+                        <box>
+                            <size>0.5 0.5 0.9</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>0 0 1 1</ambient> 
+                        <diffuse>0 0 1 1</diffuse> 
+                    </material>
+                </visual>
+                <collision name="chair_collision">
+                    <geometry>
+                        <box>
+                            <size>0.5 0.5 0.9</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!--Dumbell-->
+        <model name="dumbell">
+            <static>true</static>
+            <pose>-0.5 -0.5 0.1 0 0 0</pose>
+            <link name="dumbell_link">
+                <visual name="dumbell_visual">
+                    <geometry>
+                        <box>
+                            <size>0.2 0.4 0.2</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>0 0 0 1</ambient> 
+                        <diffuse>0 0 0 1</diffuse>
+                    </material>
+                </visual>
+                <collision name="dumbell_collision">
+                    <geometry>
+                        <box>
+                            <size>0.2 0.4 0.2</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
+
+        <!--Trash Object 1-->
+        <model name="trash1">
+            <static>true</static>
+            <pose>-1.8 -1.2 0.025 0 0 0</pose>
+            <link name="trash1_link">
+                <visual name="trash1_visual">
+                    <geometry>
+                        <box>
+                            <size>0.1 0.1 0.1</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>1.0 0.4 0.7 1</ambient>
+                        <diffuse>1.0 0.4 0.7 1</diffuse>
+                        <specular>0.5 0.5 0.5 1</specular>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!--Trash Object 2-->
+        <model name="trash2">
+            <static>true</static>
+            <pose>1.8 1.2 0.025 0 0 0</pose>
+            <link name="trash2_link">
+                <visual name="trash2_visual">
+                    <geometry>
+                        <mesh>
+                            <uri>/home/qalis/ros2_ws/src/trashbot/meshes/500 ml water bottle v1.stl</uri>
+                            <scale>0.001 0.001 0.001</scale>
+                        </mesh>
+                    </geometry>
+                    <material>
+                        <ambient>1.0 0.4 0.7 1</ambient>
+                        <diffuse>1.0 0.4 0.7 1</diffuse>
+                        <specular>0.5 0.5 0.5 1</specular>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!--Trash Object 3-->
+        <model name="trash3">
+            <static>true</static>
+            <pose>0 -0.5 0.025 0 0 0</pose>
+            <link name="trash3_link">
+                <visual name="trash3_visual">
+                    <geometry>
+                        <box>
+                            <size>0.1 0.1 0.1</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>1.0 0.4 0.7 1</ambient>
+                        <diffuse>1.0 0.4 0.7 1</diffuse>
+                        <specular>0.5 0.5 0.5 1</specular>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+    </world>
+</sdf>
