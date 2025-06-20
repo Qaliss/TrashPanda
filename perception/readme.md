@@ -24,6 +24,13 @@ See https://app.roboflow.com/trash-ycdoj/paperplastic-dynp6/3 for dataset detail
 - **Batch Size:** 16
 - **Input Size:** 640x640
 
+## Training Graphs
+
+![image](https://github.com/user-attachments/assets/4c240965-25bb-465a-b2ab-374b5daa12e8)
+
+![image](https://github.com/user-attachments/assets/e8a1b6a4-70a1-4788-82a0-37187d459005)
+
+
 
 
 
