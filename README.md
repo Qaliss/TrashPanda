@@ -11,3 +11,6 @@ This robot autonomous navigates through an environment using a ROS2 navigation s
 - Trash classification and detection with custom trained YOLOv8 model
 - Simulation environment in Gazebo
 - Intake system for collection
+
+# Dependencies
+This project was created using the Windows Subsystem for Linux (WSL) on Windows 11 and ROS2 Humble.
